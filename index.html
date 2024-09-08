@@ -1,4 +1,3 @@
-<!---Log-in-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,123 +10,110 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Picture Perfect</title>
     <style>
-           * {
-    margin: 0;
-    padding: 0;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    /* font-family: 'Josefin Sans', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    max-height: 100vh;
-    background: url(image/website1.jpeg);
-            background-size:  cover; 
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background: url(image/website1.jpeg);
+            background-size: cover;
+        }
 
-/*nav */
-header {
-    padding: 1.7rem 1rem;
-    /* background-color: #fff; */
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin: auto;
-    align-items: center;
-}
+        /*nav */
+        header {
+            padding: 1.7rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+        }
 
-.logo {
-    font-size: 1rem;
-    font-weight: 600;
-    position: absolute;
-    /* width: 10%;
-    top: 3;
-    left: 0;
-    padding: 1.7rem 1rem; */
- 
+        .logo {
+            font-size: 1rem;
+            font-weight: 600;
+            position: absolute;
+        }
 
-}
-/* .logo img {
-    width: 100px; /* Adjust the width to your desired size */
-    /* height: auto; This maintains the aspect ratio */
-/* }  */
+        .logo a {
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-.logo a {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    /* animation: slideRight 1s ease forwards; */
-}
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: .97rem;
-    font-weight: 600;
-    letter-spacing: -1.3px;
-    padding: 1rem;
-    /* padding: 0.4rem 1rem; */
-    opacity: 1;
-    /* animation: slideTop .5s ease forwards; */
-}
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: -1.3px;
+            padding: 1rem;
+            opacity: 1;
+        }
 
-nav a.active,
-nav a:hover {
-    background-color: #000000;
-    color: #fff;
-    border-radius: 1rem;
-    transition: all.3s ease-in-out;
-    /* animation: slideTop 1s ease forwards; */
-}
+        nav a.active,
+        nav a:hover {
+            background-color: #000000;
+            color: #fff;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+        }
 
-#click {
-    display: none;
-}
+        #click {
+            display: none;
+        }
 
-.menu {
-    display: none;
-}
+        .menu {
+            display: none;
+        }
 
-/* Nav */
+        section {
+            margin: 2rem 8.5rem;
+        }
 
-section {
-    margin: 2rem 8.5rem;
-    /* align-items: center; */
-}
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem auto;
-}
+        .main h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
 
-.main h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-}
+        .main p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
 
-.main p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin-top: 1.7rem;
+        }
 
-.social {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.4rem;
-    margin-top: 1.7rem;
-}
-
-.social a {
-    color: #ffffff;
-    font-size: 1rem;
-    border: 1.6px solid #ffffff;
-    border-radius: 50%;
-    padding: .35rem;
-    text-align: center;
-    width: 26px;
-}
+        .social a {
+            color: #ffffff;
+            font-size: 1rem;
+            border: 1.6px solid #ffffff;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+            width: 26px;
+        }
 
         footer {
             background-color: #333;
@@ -136,90 +122,98 @@ section {
             padding: 1rem;
         }
 
-.social a:hover {
-    color: #fff;
-    background-color: #000000;
-    transition: all .3s ease-in-out;
-    box-shadow: rgb(255, 0, 0);
-}
+        .social a:hover {
+            color: #fff;
+            background-color: #000000;
+            transition: all .3s ease-in-out;
+            box-shadow: rgb(255, 0, 0);
+        }
 
-.main h1 span:nth-child(1) {
-    font-size: 1.5rem;
-}
+        .main h1 span:nth-child(1) {
+            font-size: 1.5rem;
+        }
 
-.images {
-    background-image: url(/img/graph3.png);
-    background-repeat: no-repeat;
-    background-position: 0 -75px;
-}
+        .images {
+            background-image: url(/img/graph3.png);
+            background-repeat: no-repeat;
+            background-position: 0 -75px;
+        }
 
-@media only screen and (max-width:480px) {
-    .menu {
-        display: block;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #ffffff;
-    }
+        /* Responsive Styles */
+        @media only screen and (max-width: 480px) {
+            .menu {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #ffffff;
+            }
 
-    header {
-        padding: 0.7rem 1rem;
-        align-items: center;
-        max-width: 100%;
-    }
+            header {
+                padding: 0.7rem 1rem;
+                align-items: center;
+                max-width: 100%;
+            }
 
-    nav {
-        position: absolute;
-        display: grid;
-        top: 75px;
-        width: calc(100% - 40px);
-        text-align: center;
-        background-color: #fff;
-        left: -100%;
-    }
+            nav {
+                position: absolute;
+                top: 75px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+                display: none;
+            }
 
-    #click:checked~nav {
-        left: 0%;
-        transition: all 0.3s ease;
-    }
+            #click:checked~nav {
+                display: block;
+                transition: all 0.3s ease;
+            }
 
-    section {
-        margin: 1rem 1.5rem;
-    }
+            nav a {
+                display: block;
+                padding: 0.7rem;
+                font-size: 1rem;
+            }
 
-}
-@keyframes slideRight {
-    0%{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-@keyframes slideTop {
-    0%{
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-    
+            section {
+                margin: 1rem;
+            }
 
+            footer {
+                padding: 0.7rem;
+                font-size: 0.8rem;
+            }
+        }
 
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
 
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideTop {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="#">PicturePerfect.
-                <!-- <img src="image/logoofpp.png" alt="PicturePerfect."> -->
-            </a>
+            <a href="#">PicturePerfect.</a>
         </div>
         <input type="checkbox" id="click">
         <label for="click" class="mainicon">
@@ -229,21 +223,17 @@ section {
         </label>
         <nav>
             <a href="#" class="active">Home</a>
-            <a href="potofilo.html">Portfolio</a>
-            <a href="dsfdsf.html">Learn</a>
-            <a href="contactpage.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-
     <section>
         <div class="main">
-            <div class="detail"><!---Sarah -->
+            <div class="detail">
                 <h1><span style="color:#ffffff;">Hi, It's Me</span> <br> I'm <span class="text" style="color:#ffffff;"></span></h1>
-                <!-- <h2><span class="text"></span></h2> -->
-                <p> I am a passionate photographer dedicated <br> to capturing
-                    the beauty, 
-                   emotion,  <br> and essence of the world around us. </p>
+                <p>I am a passionate photographer dedicated <br> to capturing the beauty, emotion, <br> and essence of the world around us.</p>
                 <div class="social">
                     <a href="https://github.com/Abhinav21082003"><i class="bi bi-github"></i></a>
                     <a href="https://www.instagram.com/invites/contact/?i=kyxs3ihwyvw5&utm_content=42xqoh9"><i class="bi bi-instagram"></i></a>
@@ -257,29 +247,28 @@ section {
         </div>
     </section>
 
+    <footer>
+        <p>&copy; Picture Perfect Photography Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sayWelcome() {
+            alert('Welcome, to Picture Perfect Photography');
+        }
+        sayWelcome();
+
+        var typed = new Typed(".text", {
+            strings: ["Abhinav..."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
 </body>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-</style>
-<!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-  </style> -->
-  <script>
-    function sayWelcome(){
-        alert('Welcome,to picture perfect Photography');
-    }
-    sayWelcome()
-    var typed= new Typed(".text", {
-        strings:["Abhinav..."],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop:true
-    });
-</script>
 
-
-<footer>
-<p>&copy; Picture perfect Photography Portfolio. All rights reserved.</p>
-</footer>
 </html>
